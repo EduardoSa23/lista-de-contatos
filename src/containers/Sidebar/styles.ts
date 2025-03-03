@@ -19,7 +19,7 @@ export const MenuButton = styled.button`
 
   &.aberta {
     left: auto;
-    right: 50px;
+    right: 70px;
   }
 
   @media (min-width: 740px) {
