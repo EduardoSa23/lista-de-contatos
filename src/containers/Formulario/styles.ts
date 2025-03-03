@@ -104,3 +104,9 @@ export const Cadastrar = styled.button`
     background-color: #0386f2;
   }
 `
+
+export const Voltar = styled(Cadastrar)`
+  @media (min-width: 740px) {
+    display: none;
+  }
+`

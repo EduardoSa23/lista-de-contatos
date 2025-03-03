@@ -1,11 +1,13 @@
 import { FormEvent, useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { useNavigate } from "react-router-dom"
 import * as enums from '../../utils/enums/Contato';
 import * as S from './styles'
 import { cadastrar } from '../../store/reducers/contatos';
 import Contato from '../../models/Contato';
 
 const FormularioCadastro = () => {
+  const navigate = useNavigate()
   const dispatch = useDispatch();
   const [nome, setNome] = useState('');
   const [descricao, setDescricao] = useState('');
@@ -76,6 +78,7 @@ const FormularioCadastro = () => {
           <option value={enums.Categoria.FAVORITO}>Favorito</option>
         </S.Select>
         <S.Cadastrar type="submit">Cadastrar</S.Cadastrar>
+        <S.Voltar onClick={() => navigate('/')}>Voltar</S.Voltar>
       </S.Formulario>
     </S.Container>
   );
