@@ -20,15 +20,15 @@ const initialState: ContatosState = {
         {
             nome: 'Denis Sá',
             descricao: 'Data Science',
-            telefone: '(11) 99999-9999',
+            telefone: '(11) 99999-9777',
             email: 'denis@gmail.com',
-            categoria: enums.Categoria.FAVORITO,
+            categoria: enums.Categoria.TRABALHO,
             id: 2
         },
         {
             nome: 'Carlos Sá',
             descricao: 'Desenvolvedor Back-end',
-            telefone: '(11) 99999-9999',
+            telefone: '(11) 99999-9888',
             email: 'carlos@gmail.com',
             categoria: enums.Categoria.AMIGO,
             id: 3
