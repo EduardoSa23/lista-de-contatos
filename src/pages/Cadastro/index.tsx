@@ -3,6 +3,7 @@ import Sidebar from "../../containers/Sidebar"
 
 const Cadastro = () => (
     <>
+      <Sidebar mostrarFiltros={false}/>
       <FormularioCadastro />
     </>
   )
